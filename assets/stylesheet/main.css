@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+   
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+h1, h2 {
+  color: #ffffff;
+  text-align: center;
+ 
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 150%;
+}
+
+p {
+  //text-align: center;
+  color: #ffffff;
+  line-height: 140%;
+  padding: 30px 0 30px 0;
+}
+
+
+.main_page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:30px 30px;
+}
+
+.main_header {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //background: linear-gradient(to bottom, #006666 0%, #339966 100%);
+}
+
+.inside_container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding:30px 30px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #006666 0%, #339966 100%);
+}  
+
+
+ 
+
+
+.header {
+  display: flex;
+  
+  justify-content: space-between;
+  
+
+  
+}
+
+.logo {
+  width: 80px;
+  height: 30px;
+}
+/*portfolio*/
+ .portfolio_heading {
+  color: black;
+  margin: 20px;
+ }
+  
+ 
+
+ .image {
+  width: 250px;
+  height: 200px;
+  background-color: yellow;
+  border: 1px solid black;
+  margin:20px auto;
+
+ }
+
+/*about*/
+
+.about {
+  
+  background: linear-gradient(to bottom, #006666 0%, #339966 100%);
+  
+}
+ 
+.btn {
+  text-align: center;
+  display: inline-block; 
+  
+}
+.apply_btn {
+  text-align: center;
+}
+
+.padding {
+  padding-bottom: 20px;
+}
+
+/*contact*/
+
+.contact_heading {
+  color: black;
+
+}
+
+.contact {
+  //display: flex;
+  width: 400px;
+  
+}
+
+.contact_form {
+  display:flex;
+  flex-direction: column;
+  padding: 18px;
+  align-items: center;
+
+  
+
+}
+
+input, textarea {
+  margin: 20px 0 20px 0;
+}
+
+/* map */
+
+.map{
+  background: #bebebe;
+}
+
+/*table*/
+
+table {
+  width:100%;
+  margin: 0 auto;
+  margin: 20px 0 20px 0;
+}
+
+th,td {
+  height: 50px;
+  text-align: left;
+  padding: 15px;
+  
+}
+th {
+  color:#6474ea;
+}
+.row_title {
+  color: #f47c7c;
+}
+ 
+ .tr_title {
+  background-color: #1a246b;
+ }
+
+.tr_2 {
+  background-color: #5d649b;
+}
+
+.tr_1 {
+  background-color: #494e75;
+}
+
+/*location*/
+
+
+.location {
+  background-color: #103b5e;
+}
+
+.social{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+
+}
+
+.social_icon {
+  padding: 10px;
+  margin: 10px;
+  display:inline-block;
+  border-radius: 50%;
+  border:2px solid white;
+  color: white;
+}
+.address {
+  text-align: center;
+}
+ 
+.facebook {
+  padding-left:20px;
+  //padding-right: 20px; 
+}
+
+
+/*footer*/
+.footer {
+  background-color: #5f637f;
+}
+
+.footer_text {
+  text-align: center;
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 960px) {
+  body {
+    //background-color: #B2D6FF; /* Blue */
+     }
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+ /*about para*/
+  .para { 
+    width: 30%;
+   padding: 20px;  
+
+   }
+  
+  .article {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  /*location*/
+
+  .location_flex {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .loc{
+    width: 33.33%;
+  }
+
+}
